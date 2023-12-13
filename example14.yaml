@@ -1,0 +1,13 @@
+apiVersion : v1
+kind : Pod
+metadata :
+  name : multicontainer-pod1
+
+spec :
+  containers :
+    - name : mynginx
+      image : nginx
+
+    - name : mytomcat
+      image : vishymails/tomcatimage:1.0
+      
